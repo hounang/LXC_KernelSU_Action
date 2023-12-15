@@ -28,5 +28,5 @@ for bin in $(find "$WORK_DIR" -type f -exec file {} \; | grep 'ELF .* interprete
     "$HOME"/patchelf --add-rpath "$HOME"/glibc/usr/lib --force-rpath --set-interpreter "$HOME"/glibc/usr/lib/ld-linux-x86-64.so.2 "$bin"
 done
 
-echo "Cleaning"
+echo "Start Cleaning Patchelf"
 rm -rf "$HOME"/patchelf
