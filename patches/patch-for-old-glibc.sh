@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-
+#just patch
 WORK_DIR=$(pwd)
 cd "$HOME" || exit
 echo "Downloading patchelf binary from ArchLinux repos"
